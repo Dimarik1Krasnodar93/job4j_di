@@ -1,9 +1,11 @@
 package ru.job4j.di;
 
 import lombok.Data;
+import org.springframework.stereotype.Component;
 import ru.job4j.tracker.input.Input;
 
 @Data
+@Component
 public class StartUI {
 
     private Store store;

@@ -1,5 +1,6 @@
 package ru.job4j.tracker;
 
+import org.springframework.stereotype.Component;
 import ru.job4j.tracker.model.Item;
 
 import javax.swing.plaf.nimbus.State;
@@ -9,7 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 
-
+@Component
 public class SqlTracker implements Store, AutoCloseable {
 
     private Connection cn;
