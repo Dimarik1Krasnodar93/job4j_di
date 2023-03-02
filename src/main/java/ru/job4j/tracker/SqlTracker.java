@@ -1,5 +1,6 @@
 package ru.job4j.tracker;
 
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 import ru.job4j.tracker.model.Item;
 
@@ -11,6 +12,7 @@ import java.util.List;
 import java.util.Properties;
 
 @Component
+@Scope("prototype")
 public class SqlTracker implements Store, AutoCloseable {
 
     private Connection cn;
