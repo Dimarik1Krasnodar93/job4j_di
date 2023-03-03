@@ -20,16 +20,6 @@ public class StartUI {
         this.store = store;
     }
 
-    @Autowired
-    public void setStore(Store store) {
-        this.store = store;
-    }
-
-    @Autowired
-    public void setInput(Input input) {
-        this.input = input;
-    }
-
     public void add(String value) {
         store.add(value);
     }
