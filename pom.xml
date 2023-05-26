@@ -16,6 +16,7 @@
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
     <version>2.7.9</version>
+    <relativePath></relativePath>
   </parent>
 
   <properties>
@@ -103,7 +104,7 @@
               <goal>shade</goal>
             </goals>
             <configuration>
-              <finalName>main</finalName>
+              <finalName>job4j_di</finalName>
               <transformers>
                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
                   <mainClass>ru.job4j.di.Main</mainClass>
